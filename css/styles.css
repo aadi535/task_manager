@@ -1,0 +1,198 @@
+/* task_manager/css/styles.css */
+a.register-link {
+    color: #14ec3f; /* Change to desired color */
+}
+
+a.login-link {
+    color: #00ff00; /* Change to desired color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #000000, #25373c); /* Gradient colors */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* Default text color */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(45, 70, 72, 0.8); /* Background color with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(130, 229, 150);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"], input[type="password"], textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: border 0.3s;
+    background-color: #ffffff;
+    color: #333;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0df3e8;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #05f67d;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #375052;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(49, 199, 94, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #2e3b35;
+}
+
+li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8e2d36;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.dark-mode {
+    background-color: #373636;
+    color: #ffffff;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="password"],
+.dark-mode textarea {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #666;
+}
+
+.dark-mode button:hover {
+    background-color: #555;
+}
+
+.dark-mode li {
+    background-color: #444;
+}
+
+.dark-mode li:hover {
+    background-color: #555;
+}
+
+.dark-mode li button {
+    background-color: #dc3545;
+}
+
+.dark-mode li button:hover {
+    background-color: #c82333;
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+
+/* Quotes Animation */
+.quotes-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 18px;
+    font-style: italic;
+    color: #6dd6a5;
+    animation: fadeInOut 8s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 80% {
+        opacity: 0;
+    }
+    10%, 75% {
+        opacity: 1;
+    }
+}
